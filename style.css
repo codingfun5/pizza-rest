@@ -67,8 +67,8 @@ section {
     justify-content: center;
     background-color: white;
     position: relative;
-    padding: 0px;
-    width: 95%;
+    padding: 70px;
+    width: 100%;
     margin:auto
 }
 
@@ -88,6 +88,7 @@ section {
   display: flex;
   flex-direction: row;
   background-color: #68B046;
+  align-items: stretch;
 }
 .navbar {
   display: flex;
@@ -99,9 +100,10 @@ section {
   .nav_menu {
     display: flex;
     align-items: center;  
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    margin-right: 80px;
   }
   .nav_menu.active {
     left: 0;
@@ -121,6 +123,7 @@ section {
   .nav_link:last-child {
     margin-right: 0;
   }
+  
   li {
     list-style: none;   
   }
@@ -176,10 +179,11 @@ section {
   position: relative;
   width: 80%;
   height: auto;
+  
 }
 
 .welcome{
-  margin-top: 230px;
+  margin-top: 100px;
 
 }
 .title {
@@ -206,7 +210,7 @@ section {
 .icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  
   justify-content: center;
   align-items: center;
 }
@@ -220,6 +224,11 @@ section {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+.facebook_logo, .instagram_logo {
+  width: 35px;
+  height: 35px;
+}
+
 #icon_reservation {
   background-color: #dde2da;
   color: black;
@@ -263,13 +272,13 @@ padding: 4px;
     flex-direction: column; 
     position: relative;
     margin-top: 20px;
-    left: 250px;
+    left: 160px;
 }
 #pasta {
   color: black;
   position: relative;
-  left: 80px;
-  margin-top: 135px;
+  left: 0px;
+  margin-top: 145px;
 }
   p {
     font-size: 26px;
@@ -294,7 +303,7 @@ padding: 4px;
   .about {
     color: #262626;
     font-size: 40px;
-    font-style:italic;
+    font-style:italic; 
     padding: 40px; 
   }
   .our_story {
@@ -382,19 +391,19 @@ padding: 4px;
     margin:-30px auto;
     
     
-    height:250px;
-    width:250px;
-    background-color:#68B046;
-    color:#fff;
-    padding:20px;
+    height: 250px;
+    width: 250px;
+    background-color :#68B046;
+    color: #fff;
+    padding: 20px;
   }
   
   .card-meal-type{
-    font-style:italic;
+    font-style: italic;
     margin-top: 10px;
   }
   .card-title{
-    font-size:2.2rem;
+    font-size: 2.2rem;
     margin-bottom:0px;
     margin-top: 25px;
   }
@@ -402,16 +411,16 @@ padding: 4px;
     font-size:1.25rem;
   }
   .card-price{
-    width:60px;
-    height:60px;
+    width: 60px;
+    height: 60px;
     background-color:#DD3019;
     color:#fff;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: 100px;
-    font-size:1.5rem;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   
@@ -441,7 +450,7 @@ padding: 4px;
   }
 .picture_box_shadow {
   
-    width: 70%;
+    width: 100%;
     height: auto;
   box-shadow:0 15px 20px 0 rgba(0,0,0,0.5); 
 } 
@@ -506,11 +515,7 @@ color: #777373;
 font-size: 15px;
 justify-content: center;
 }
-.hr {
-  width: 400px;
-  border-top: 3px solid #d0d0d0;
-  
-}
+
 .contact_us {
   display: flex;
   flex-direction: row;
@@ -587,311 +592,328 @@ h3 {
 
 }
 
-@media  screen and (max-width: 768px){
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-
-}
-.bar {
-  background-color: white;
-}
-  .hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  display: block;
-  cursor: pointer;
-  margin-left: 100%;
-  margin-top: 5px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-  background-color: #DD3019;
-  color: white;
-  cursor: pointer;
-  padding: 8px;
-
-}
-
-.hamburger:hover {
-  background-color: #DD3019;
-}
-.hamburger:hover.active {
-  background-color: #68B046;
-  }
-
-  .hamburger.active .bar:nth-child(2){
-opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-transform: translateY(8px) rotate(45deg);
-  }
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  }
 
 
-  #hamburger_menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  display: none;
-  color: #101010;
-  padding: 30px;
-  margin: -250px;
-  margin-top: -48px;
-  font-size: 10px;
-  }
-  #hamburger_menu.active {
-  background-color: #d0d0d0;
-  display: block;
-  left: 0;
-  opacity: 1;
-  }
-  
-section.active {
-  padding: 5px;
-  width: 100%;
-  margin-left: 0px;
-  margin-top: 250px;
+  @media  screen and (max-width: 760px) and (min-width: 320px){
+   
+    section {
+      width: 100%;
+      padding: 7px;
     }
-
-  .container {
+  .navbar {
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
-    justify-content: flex-end;
-    height: 480px;
+    margin: 0 4px; 
   }
-
-
-  .split_pizza_picture {
+  .bar {
+    background-color: white;
+  }
+    .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-  .pizza-picture {
-    vertical-align: baseline;
-    width: 100%;
-    
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: #DD3019;
+    padding: 6px;
+  
   }
   
-  .preview-header {
-    height: 40px;
-    width: 100%;
-    }
-
-  
-  .preview-action-buy {
-      margin-right: 5px;
+  .hamburger:hover {
+    background-color: #DD3019;
   }
-
-
-  .btn {
-    height: 40px;
-      font-size: 15px;
-      padding: 10px;
-      margin-right: 5px;
-  }
-
-    .logo {
-      position: relative;
-      margin-left: 10px;
-      margin-top: 0px;
-      width: 40px;
-      height: 40px;
+  .hamburger:hover.active {
+    background-color: #68B046;
     }
   
-  #icon_reservation {
-    font-size: 15px;
-    padding: 5px;
-      }
-  .reservation {
-    font-size: 12px;
-      }
-  
-  #vr {
-    height: 40px;
-    margin: 5px;
+    .hamburger.active .bar:nth-child(2){
+  opacity: 0;
     }
-.welcome{
-    margin-top: 60px;
-  }
-  .title {
-  margin-left: 20px;
-  }
-  .rectangle {
-    width: 60px;
-    height: 5px;
-    margin-top: 330px;
-    margin-left: 20px;
-  }
-  
-  .title_text{
-    font-size: 16px;  
-  }
-    .heading {
-      margin-top: 10px;
-  }
-  .headline {
-      margin-top: 10px;
-      left: 10px;
-  }
-  #pasta {
-    right: 0px;
-    margin-top: 10px;
-
-  }
-  
-  .follow {
-      font-size: 15px;
+    .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
     }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    }
+   
   
-  .delivery_menu {
+    #hamburger_menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .delivery_menu_price {
-  width: 100%;
-  height: auto;
-  }
-  .pizza_delivery_boy {
-    width: 35%;
-    height: 35%;
-  }
-  
-    h1 {
-      font-size: 25px;
-    }
-    h2 {
-    font-size: 20px;
-    }
-    p, span {
-      font-size: 15px;
-  }
-  .about {
-    font-size: 27px;
-    padding: 30px; 
-  }
-  .our_story {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0px;
-    }
-  .par {
-    font-size: 15px;
-    }
-  .bowl_with_pasta {
     justify-content: center;
+    display: none;
+    color: #101010;
+    padding: 20px;
+    margin: -250px;
+    margin-top: 8px;
+    font-size: 10px;
+  
+    }
+    #hamburger_menu.active {
+    background-color: #d0d0d0;
+    display: block;
+    left: 0;
+    opacity: 1;
+    
+    }
+    
+
+    
+  section.active {
+    padding: 5px;
     width: 100%;
-    height: auto;
-    }
-    .container_menu{
-      padding: 0px 0px;
-      
-        width: auto;
+    margin-left: 0px;
+    margin-top: 250px;
       }
-    
-    .card {
-      justify-content: center;
-      margin-bottom: 20px;
-      margin: 10px;
-      margin-top: 20px;
-    }
-    
-    .card-image{
-      width: 320px;
-      height: 250px;
-      margin-left: 40px;
-      justify-content: center;
-    }
-    
-
-    .card-text{
-        height:200px;
-        width:200px;
-        padding:10px;
-    }
-    
-    .card-meal-type{
-        margin-top: 5px;
-    }
-    .card-title{
-      font-size:1.80rem;
-      }
-
-    .contact_contact_us{
-      justify-content: center;
-      }
-    h3 {
-      font-size: 15px;
-    }
-    .paragraph {
-      font-size: 15px;
-    }
-    .contact_us {
+  
+    .container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-content: flex-end;
+      justify-content: flex-end;
+      height: 480px;
     }
-    #vr_line {
-
-      display: none;
-
+  
+  
+    .split_pizza_picture {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
-    #contact_us_logo_picture {
-      width: 30px;
-      height: 30px;
-    }
-    
-  .story {
-    margin-top: 15px;  
-    margin-left: 0px;
-    justify-content: space-evenly;
-    width: 100%;
-      }
-    .restaurant_reservation {
-      margin-left: 5px;
-      margin-right: 5px;
-  }
-    .picture_box_shadow {
+    .pizza-picture {
+      vertical-align: baseline;
       width: 100%;
-      height: 500px;
-      }
-    .reservation_form {
+      
+    }
     
-  margin-top: 10px;
+    .preview-header {
+      height: 40px;
+      width: 100%;
       }
-    input {
-    padding: 7px;
-    font-size: 10px;
-    width: 250px;
-  }
-  label {
-    font-size: 15px; 
+  
+    
+    .preview-action-buy {
+        margin-right: 5px;
     }
   
   
-  .button_form {
+    .btn {
+      height: 40px;
+        font-size: 15px;
+        padding: 10px;
+        margin-right: 5px;
+    }
+  
+      .logo {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 0px;
+        width: 40px;
+        height: 40px;
+      }
+      .facebook_logo,.instagram_logo  {
+        width: 25px;
+        height: 25px;
+      }
+      
+    #icon_reservation {
       font-size: 15px;
       padding: 5px;
+        }
+    .reservation {
+      font-size: 12px;
+        }
+    
+    #vr {
+      height: 40px;
+      margin: 5px;
+      }
+  .welcome{
+      margin-top: 60px;
     }
-  .footer_logo_picture {
-    width: 80px;
+    .title {
+    margin-left: 20px;
     }
-  #myBtn {
-
-  right: 185px;
+    .rectangle {
+      width: 60px;
+      height: 5px;
+      margin-top: 330px;
+      margin-left: 20px;
+    }
+    
+    .title_text{
+      font-size: 16px;  
+    }
+      .heading {
+        margin-top: 10px;
+    }
+    .headline {
+        margin-top: 10px;
+        left: 10px;
+    }
+    #pasta {
+      right: 0px;
+      margin-top: 10px;
   
-  font-size: 15px;
-  border: none;
-  outline: none;
-  padding: 10px;
+    }
+    
+    .follow {
+        font-size: 12px;
+      }
+    
+    .delivery_menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .delivery_menu_price {
+    width: 90%;
+    height: auto;
+    }
+    .pizza_delivery_boy {
+      width: 35%;
+      height: 35%;
+    }
+    
+      h1 {
+        font-size: 25px;
+      }
+      h2 {
+      font-size: 20px;
+      }
+      p, span {
+        font-size: 15px;
+    }
+    .about {
+      font-size: 27px;
+      padding: 30px; 
+    }
+    .our_menu_title {
+      font-size: 24px;
+    }
+    .our_story {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0px;
+      }
+    .par {
+      font-size: 15px;
+      }
+    .bowl_with_pasta {
+      justify-content: center;
+      width: 90%;
+      height: auto;
+      }
+      .container_menu{
+        padding: 0px 0px;
+        
+          width: 100%;
+        }
+      
+      .card {
+        justify-content: center;
+        margin-bottom: 20px;
+        margin: 10px;
+        margin-top: 20px;
+        width: 350px;
+      }
+      
+      .card-image{
+        width: 320px;
+        height: 250px;
+        margin-left: 40px;
+        justify-content: center;
+      }
+      
   
-}
+      .card-text{
+          height: 200px;
+          width: 200px;
+          padding: 10px;
+      }
+      
+      .card-meal-type{
+          margin-top: 5px;
+      }
+      .card-title{
+        font-size: 1.70rem;
+        }
+  
+      .contact_contact_us{
+        justify-content: center;
+        }
+      h3 {
+        font-size: 15px;
+      }
+      .paragraph {
+        font-size: 15px;
+      }
+      .contact_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #vr_line {
+  
+        display: none;
+  
+      }
+      #contact_us_logo_picture {
+        width: 30px;
+        height: 30px;
+      }
+      
+    .story {
+      margin-top: 15px;  
+      margin-left: 0px;
+      justify-content: space-evenly;
+      width: 100%;
+        }
+      .restaurant_reservation {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+      .picture_box_shadow {
+        width: 100%;
+        height: 500px;
+        }
+      .reservation_form {
+      
+    margin-top: 10px;
+        }
+      input {
+      padding: 7px;
+      font-size: 10px;
+      width: 250px;
+    }
+    label {
+      font-size: 15px; 
+      }
+    
+    
+    .button_form {
+        font-size: 15px;
+        padding: 5px;
+      }
+    .footer_logo_picture {
+      width: 80px;
+      }
+    #myBtn {
+  
+    right: 185px;
+    
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    
+  }
+  
 
 }

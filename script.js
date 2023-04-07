@@ -3,22 +3,25 @@ gsap.from('.pizza-picture', { duration: 1, delay: 1, x: '-100vw', ease: 'power2.
 gsap.from('#pasta', { duration: 1.5 , delay: 1.5, x: '-80vw', ease: 'power2.in', opacity: 1 })
 gsap.fromTo('.logo', { opacity: 0, scale: 0, rotation: 120 }, { duration: 1, delay: 1.5, opacity: 1, scale: 1, rotation: 0 })
 gsap.from('.about', { duration: 6, delay: 1.4, y: '10vw', ease: 'power2.in', opacity: 0 })
-gsap.from('.pizza_delivery_boy', { duration: 12, delay: 2.5, x: '-100vw', ease: 'power2.in', opacity: 0 })
+gsap.from('.pizza_delivery_boy', { duration: 6, delay: 2.0, x: '-100vw', ease: 'power2.in', opacity: 0 })
 gsap.from('.card-text', { duration: 7, delay: 1.4, y: '10vw', ease: 'power2.in', opacity: 0 })
 gsap.from('.card-price', { duration: 8, delay: 2.4, y: '10vw', ease: 'power2.in', opacity: 0 })
 
 
-let hamburger = document.querySelector(".hamburger");
-let navMenu = document.querySelector("#hamburger_menu");
-let section = document.querySelector("section");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("#hamburger_menu");
+const section = document.querySelector("section");
 
-hamburger.addEventListener("click", mobileMenu);
+
+
+hamburger.addEventListener("click", onClickMenu);
     
 
-function mobileMenu() {
+function onClickMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     section.classList.toggle("active");
+   
 }
 
 
