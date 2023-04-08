@@ -729,10 +729,10 @@ h3 {
       font-size: 12px;
         }
     
-    #vr {
-      height: 40px;
-      margin: 5px;
-      }
+    #vr  {
+    height: 100px;
+    margin: 8px;
+}
   .welcome{
       margin-top: 60px;
     }
