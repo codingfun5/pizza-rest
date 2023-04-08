@@ -65,10 +65,11 @@ body {
 section {
     display: flex;
     justify-content: center;
+    
     background-color: white;
     position: relative;
-    padding: 70px;
-    width: 100%;
+    padding: 50px;
+    width: 90%;
     margin:auto
 }
 
@@ -177,7 +178,7 @@ section {
 }
 .pizza-picture {
   position: relative;
-  width: 80%;
+  width: 70%;
   height: auto;
   
 }
@@ -196,7 +197,7 @@ section {
 }
 .rectangle {
   width: 100px;
-  height: 20px;
+  height: 10px;
   background: white;
 
   margin-left: 40px;
@@ -271,14 +272,14 @@ padding: 4px;
 .headline {
     flex-direction: column; 
     position: relative;
-    margin-top: 20px;
+    margin-top: 24px;
     left: 160px;
 }
 #pasta {
   color: black;
   position: relative;
   left: 0px;
-  margin-top: 145px;
+  margin-top: 14px;
 }
   p {
     font-size: 26px;
@@ -350,7 +351,7 @@ padding: 4px;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap:wrap;
-    padding: 40px 40px;
+    padding: 40px 30px;
   }
   .card{
     display:flex;
@@ -624,9 +625,7 @@ h3 {
   
   }
   
-  .hamburger:hover {
-    background-color: #DD3019;
-  }
+
   .hamburger:hover.active {
     background-color: #68B046;
     }
@@ -640,7 +639,7 @@ h3 {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     }
-   
+
   
     #hamburger_menu {
     display: flex;
@@ -717,8 +716,8 @@ h3 {
         height: 40px;
       }
       .facebook_logo,.instagram_logo  {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
       }
       
     #icon_reservation {
@@ -729,36 +728,37 @@ h3 {
       font-size: 12px;
         }
     
-    #vr {
-      height: 40px;
-      margin: 5px;
-      }
+    #vr  {
+      height: 100px;
+      margin: 10px;
+  }
   .welcome{
-      margin-top: 60px;
+      margin-top: 20px;
     }
     .title {
     margin-left: 20px;
+    margin-top: 10px;
     }
     .rectangle {
       width: 60px;
       height: 5px;
       margin-top: 330px;
-      margin-left: 20px;
+      margin-left: 12px;
     }
-    
+
     .title_text{
       font-size: 16px;  
     }
       .heading {
-        margin-top: 10px;
+        margin-top: 84px;
     }
     .headline {
-        margin-top: 10px;
-        left: 10px;
+        margin-top: -140px;
+        left: 170px;
     }
     #pasta {
-      right: 0px;
-      margin-top: 10px;
+      right: 97px;
+      margin-top: 0px;
   
     }
     

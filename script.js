@@ -9,7 +9,7 @@ gsap.from('.card-price', { duration: 8, delay: 2.4, y: '10vw', ease: 'power2.in'
 
 
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("#hamburger_menu");
+const navMenu = document.querySelector("#hamburger_menu, .nav_menu");
 const section = document.querySelector("section");
 
 
@@ -21,7 +21,7 @@ function onClickMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     section.classList.toggle("active");
-   
+
 }
 
 
