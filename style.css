@@ -717,8 +717,8 @@ h3 {
         height: 40px;
       }
       .facebook_logo,.instagram_logo  {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
       }
       
     #icon_reservation {
@@ -729,10 +729,7 @@ h3 {
       font-size: 12px;
         }
     
-    #vr  {
-    height: 100px;
-    margin: 8px;
-}
+    #vr 
   .welcome{
       margin-top: 60px;
     }
