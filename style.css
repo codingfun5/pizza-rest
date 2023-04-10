@@ -258,7 +258,7 @@ section {
 }
 
   .facebook{
-padding: 4px;
+  padding: 4px;
   }
   .instagram{
   padding: 4px;
@@ -453,7 +453,7 @@ padding: 4px;
   
     width: 100%;
     height: auto;
-  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5); 
+    box-shadow:0 15px 20px 0 rgba(0,0,0,0.5); 
 } 
 
   .reservation_form {
@@ -469,7 +469,7 @@ padding: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-align-items: center;
+    align-items: center;
 
     
   }
@@ -478,8 +478,8 @@ align-items: center;
     font-size: 15px;
     background-color: rgba(237, 233, 233, 0.931);
     color: rgb(52, 50, 50);
-border: 1px solid #736e6e;
-width: 450px;
+    border: 1px solid #736e6e;
+    width: 450px;
   }
   label {
     flex-direction: column;
@@ -512,9 +512,9 @@ width: 450px;
 .paragraph {
   display: flex;
   flex-direction: row;
-color: #777373;
-font-size: 15px;
-justify-content: center;
+  color: #777373;
+  ont-size: 15px;
+  justify-content: center;
 }
 
 .contact_us {
@@ -658,7 +658,7 @@ h3 {
     display: block;
     left: 0;
     opacity: 1;
-    
+    z-index: 1;
     }
     
 
@@ -702,7 +702,7 @@ h3 {
   
   
     .btn {
-      height: 40px;
+        height: 40px;
         font-size: 15px;
         padding: 10px;
         margin-right: 5px;
@@ -772,8 +772,8 @@ h3 {
       align-items: center;
     }
     .delivery_menu_price {
-    width: 90%;
-    height: auto;
+      width: 90%;
+      height: auto;
     }
     .pizza_delivery_boy {
       width: 35%;
@@ -812,8 +812,7 @@ h3 {
       }
       .container_menu{
         padding: 0px 0px;
-        
-          width: 100%;
+        width: 100%;
         }
       
       .card {
@@ -905,9 +904,7 @@ h3 {
       width: 80px;
       }
     #myBtn {
-  
     right: 185px;
-    
     font-size: 15px;
     border: none;
     outline: none;
